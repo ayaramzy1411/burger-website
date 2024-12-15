@@ -1,0 +1,414 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff4e6;
+    color: #333;
+  }
+  
+  /* سكشن البرجر */
+  .burger-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .content .text {
+    max-width: 50%;
+  }
+  
+  .content .text h1 {
+    font-size: 48px;
+    color: #333;
+  }
+  
+  .content .text p {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .content .btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .content .btn:hover {
+    background-color: #ffb400;
+  }
+  
+  .content .image img {
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+  /* سكشن الوصفة */
+  .recipe-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .recipe-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .recipe-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .burger-image img {
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+  .ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .ingredient {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fffbf2;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ingredient .icon {
+    font-size: 36px;
+    background-color: #ffcc00;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ingredient .details h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .ingredient .details p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .content .text {
+        max-width: 100%;
+    }
+  
+    .content .image img {
+        width: 300px;
+    }
+  
+    .recipe-content {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .burger-image img {
+        width: 300px;
+    }
+  }
+  /* سكشن المنيو */
+  .menu-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .menu-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    background-color: #fffbf2;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .menu-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .menu-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .menu-item .price {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f3a847;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* تنسيق التفاعل مع الصفحة */
+  @media (max-width: 768px) {
+    .menu-content {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .menu-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+  }
+  /* سكشن الديلفري المعدل */
+  .delivery-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .delivery-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .delivery-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .delivery-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .delivery-text p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .delivery-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .delivery-image img {
+    width: 80%;
+    max-width: 500px;
+    object-fit: cover;
+  }
+  
+  .order-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-button:hover {
+    background-color: #e67800;
+  }
+  
+  /* تنسيق التفاعل مع الصفحة */
+  @media (max-width: 768px) {
+    .delivery-content {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .delivery-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+  
+    .delivery-image img {
+        width: 70%;
+    }
+  }
+  /* سكشن التواصل مع السوشيال ميديا */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .contact-info h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon img:hover {
+    transform: scale(1.2);
+  }
+  
+  .contact-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .contact-image img {
+    width: 80%;
+    max-width: 500px;
+    object-fit: cover;
+  }
+  
+  /* سكشن حقوق الملكية */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+  
+  /* تنسيق التفاعل مع الصفحة */
+  @media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .contact-info {
+        padding-right: 0;
+    }
+  
+    .contact-image img {
+        width: 70%;
+        margin-top: 20px;
+    }
+  }
+  /* تنسيق الحركة لجميع الصور */
+  img {
+    opacity: 0; /* بداية الصور ستكون غير مرئية */
+    transform: translateY(100px); /* الصور تبدأ من الأسفل */
+    transition: transform 1s ease-out, opacity 1s ease-out; /* إضافة التأثيرات */
+  }
+  
+  /* عندما نضيف الكلاس active للصور */
+  img.active {
+    opacity: 1; /* جعل الصور مرئية */
+    transform: translateY(0); /* تحريك الصور إلى مكانها الأصلي */
+  }
